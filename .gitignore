@@ -46,4 +46,4 @@ buck-out/
 *.keystore
 
 ## Package
-dist
+# dist
