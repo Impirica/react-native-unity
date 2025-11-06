@@ -1,6 +1,6 @@
 {
   "name": "@wowmaking/react-native-unity",
-  "version": "1.0.0-rc.3",
+  "version": "1.0.1",
   "description": "React Native package to use Unity as library with RN app",
   "keywords": [
     "react-native",
@@ -28,7 +28,7 @@
   "devDependencies": {
     "@types/react": "^18.0.35",
     "react": "^18.2.0",
-    "react-native": "^0.71.4",
+    "react-native": "0.74.1",
     "typescript": "^5.0.4"
   }
 }

@@ -9,13 +9,13 @@ Pod::Spec.new do |s|
   s.license      = package['license']
   s.homepage     = package['repository']['url']
   s.authors      = package['author']
-  s.platform     = :ios, "13.0"
+  s.platform     = :ios, min_ios_version_supported
   s.source       = { :git => s.homepage, :tag => "v#{s.version}" }
   s.source_files  = "ios/RNUnity/**/*.{h,m}"
   s.requires_arc = true
 
   s.xcconfig = { 'FRAMEWORK_SEARCH_PATHS' => '$(inherited) $(BUILD_ROOT)/** $(CONFIGURATION_BUILD_DIR)/../**' }
 
-  s.dependency "React"
+  install_modules_dependencies(s)
 
 end
