@@ -1,4 +1,5 @@
 #import "RNUnity.h"
+#import <mach-o/dyld.h>
 
 @interface RNUnity ()
 
@@ -67,7 +68,8 @@ static id<RNUnityFramework> _RNUnity_ufw;
         id<RNUnityFramework> framework = [bundle.principalClass getInstance];
         if (![framework appController]) {
             // unity is not initialized
-            [framework setExecuteHeader: &_mh_execute_header];
+            const struct mach_header* header = _dyld_get_image_header(0);
+            [framework setExecuteHeader: header];
         }
         [framework setDataBundleId: [bundle.bundleIdentifier cStringUsingEncoding:NSUTF8StringEncoding]];
         [framework runEmbeddedWithArgc: self.argc argv: self.argv appLaunchOpts: launchOptions];

@@ -1,13 +1,8 @@
+#include <mach-o/loader.h>
 #import <Foundation/Foundation.h>
-
 #import <UIKit/UIKit.h>
-
-#include <mach-o/ldsyms.h>
-
 #import <React/RCTEventEmitter.h>
 #import <React/RCTBridgeModule.h>
-
-
 
 @protocol RNUnityAppController <UIApplicationDelegate>
 
@@ -21,7 +16,7 @@
 + (id<RNUnityFramework>)getInstance;
 - (id<RNUnityAppController>)appController;
 
-- (void)setExecuteHeader:(const __typeof__(_mh_execute_header)*)header;
+- (void)setExecuteHeader:(const struct mach_header*)header;
 - (void)setDataBundleId:(const char*)bundleId;
 
 - (void)runEmbeddedWithArgc:(int)argc argv:(char*[])argv appLaunchOpts:(NSDictionary*)appLaunchOpts;
