@@ -15,7 +15,6 @@ android {
     namespace "com.wowmaking.rnunity"
 
     ndkVersion rootProject.ext.ndkVersion
-    compileSdk rootProject.ext.compileSdk
     compileSdkVersion rootProject.ext.compileSdkVersion
 
     defaultConfig {
