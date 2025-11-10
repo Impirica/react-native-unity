@@ -23,10 +23,8 @@ android {
         versionCode 10
         versionName "1.0.0"
     }
-    lintOptions {
-        abortOnError false
+    lint {
         disable 'InvalidPackage'
-        checkReleaseBuilds false
     }
 }
 
