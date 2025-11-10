@@ -1,6 +1,6 @@
 {
   "name": "@wowmaking/react-native-unity",
-  "version": "1.0.1-rc.2",
+  "version": "1.0.1-rc.3",
   "description": "React Native package to use Unity as library with RN app",
   "keywords": [
     "react-native",
@@ -23,18 +23,18 @@
     "event-target-shim": "^5.0.1"
   },
   "peerDependencies": {
-    "react": "18.3.1",
-    "react-native": "^0.76.0"
+    "react": "19.1.1",
+    "react-native": "^0.82.0"
   },
   "devDependencies": {
-    "@react-native-community/cli": "^15.0.1",
-    "@react-native-community/cli-platform-android": "^15.0.1",
-    "@react-native-community/cli-platform-ios": "^15.0.1",
-    "@react-native/metro-config": "^0.76.0",
+    "@react-native-community/cli": "^20.0.0",
+    "@react-native-community/cli-platform-android": "^20.0.0",
+    "@react-native-community/cli-platform-ios": "^20.0.0",
+    "@react-native/metro-config": "^0.82.0",
     "@rnx-kit/align-deps": "^3.3.2",
     "@types/react": "^18.3.1",
-    "react": "18.3.1",
-    "react-native": "^0.76.0",
+    "react": "19.1.1",
+    "react-native": "^0.82.0",
     "typescript": "^5.9.3"
   },
   "rnx-kit": {
@@ -42,10 +42,10 @@
     "alignDeps": {
       "requirements": {
         "development": [
-          "react-native@0.76"
+          "react-native@0.82"
         ],
         "production": [
-          "react-native@0.76"
+          "react-native@0.82"
         ]
       },
       "capabilities": [
