@@ -1,5 +1,5 @@
 {
-  "name": "com.wowmaking.react-native-unity",
+  "name": "react-native-unity",
   "version": "1.0.1-rc.10",
   "description": "React Native package to use Unity as library with RN app",
   "keywords": [
