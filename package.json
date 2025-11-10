@@ -19,9 +19,6 @@
     "watch": "tsc -w",
     "prepack": "tsc"
   },
-  "dependencies": {
-    "event-target-shim": "6.0.2"
-  },
   "peerDependencies": {
     "react": "19.1.1",
     "react-native": "0.82.0"
