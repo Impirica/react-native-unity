@@ -24,7 +24,7 @@
 @end
 
 
-typedef void (*unity_receive_handshake)();
+typedef void (*unity_receive_handshake)(void);
 typedef void (*unity_receive_command)(const char *);
 
 
