@@ -40,15 +40,13 @@
   "rnx-kit": {
     "kitType": "library",
     "alignDeps": {
-      "requirements": {
-        "development": [
-          "react-native@0.82"
-        ],
-        "production": [
-          "react-native@0.82"
-        ]
-      },
+      "requirements": [
+        "react-native@0.82"
+      ],
       "capabilities": [
+        "community/cli",
+        "community/cli-android",
+        "community/cli-ios",
         "core",
         "core-android",
         "core-ios",
