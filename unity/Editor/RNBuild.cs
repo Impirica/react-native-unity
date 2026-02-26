@@ -113,10 +113,16 @@ namespace Wowmaking.RNU.Editor
             /* Android project modification */
             if (target == BuildTarget.Android)
             {
+                string editorRoot = Path.GetFullPath(
+                    Path.Combine(EditorApplication.applicationContentsPath, "..", "..")
+                );
+
+                string ndkPath = Path.Combine(editorRoot, "PlaybackEngines/AndroidPlayer/NDK");
+
                 /* Fix ndk path in build.gradle */
                 string gradleFile = Path.Combine(pathToBuiltProject, "unityLibrary/build.gradle");
                 string gradleText = File.ReadAllText(gradleFile);
-                gradleText = gradleText.Replace("android.ndkDirectory", "\"" + AndroidExternalToolsSettings.ndkRootPath + "\"");
+                gradleText = gradleText.Replace("android.ndkDirectory", "\"" + ndkPath + "\"");
                 File.WriteAllText(gradleFile, gradleText);
 
                 /* Delete intent from AndroidManifest.xml */
